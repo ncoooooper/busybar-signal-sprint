@@ -1,0 +1,21 @@
+{
+  "app": "signal-sprint",
+  "frames": [
+    8,
+    8
+  ],
+  "firmware": "1.3.1",
+  "inputs": [
+    [
+      "ok",
+      "ok"
+    ],
+    [
+      "ok",
+      "ok"
+    ]
+  ],
+  "source": "Device controls",
+  "exit": "finished",
+  "sha256": "3f3554e58bcbe885cb83a672ff852673367f31a5c32a189c6f176ffab8c0f022"
+}

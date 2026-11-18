@@ -31,7 +31,7 @@ export function read<T>(key:string,fallback:T):T {
 export function persist(key:string,value:unknown) {localStorage.setItem(key,JSON.stringify(value));}
 export function report(error:unknown) {console.error(manifest.id+": "+String(error));}
 
-export function surface(draw: () => Frame, input: (key: Key) => void, cleanup?: () => void, options: MotionOptions = {}) {
+export function surface(draw: () => Frame, input: (key: Key) => void, cleanup?: () => void, options: MotionOptions & {pressWheel?:()=>void; painted?:(frame:Frame)=>void} = {}) {
   const motion = makeMotion(manifest.id, options);
   const previous: Record<string, string> = {};
   let frontText: ReturnType<typeof layoutFront> = [];
@@ -111,6 +111,7 @@ export function surface(draw: () => Frame, input: (key: Key) => void, cleanup?: 
         }
         if (changed.length && !closed) {
           await device.DisplayDraw({ application_name:manifest.id, priority:50, elements:changed });
+          options.painted?.(content);
           for (const element of changed) previous[element.id] = encodedOverlay[element.id] || encoded[element.id];
         }
       }
@@ -133,6 +134,7 @@ export function surface(draw: () => Frame, input: (key: Key) => void, cleanup?: 
       requestPaint();
       return;
     }
+    if (action.key === "ok" && action.action === "press" && options.pressWheel) { options.pressWheel();return; }
     let key: Key;
     if (action.key === "encoder") key = action.delta > 0 ? "up" : "down";
     else if (action.key === "ok" || action.key === "start") {
