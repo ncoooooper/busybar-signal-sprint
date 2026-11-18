@@ -1,0 +1,43 @@
+{
+  "app": "busybar-signal-sprint",
+  "sha256": "9da0252c953cb3e00b082c92c709aa3ad1849fbb9b340901ad4a9ff31aafc45e",
+  "firmware": "1.3.1",
+  "cell": 16,
+  "lit": 14,
+  "front": [
+    72,
+    16
+  ],
+  "rear": [
+    160,
+    80
+  ],
+  "captures": [
+    {
+      "mode": "extended",
+      "guides": [
+        "use-1",
+        "use-2"
+      ],
+      "tour": "screen-transitions",
+      "input": [
+        [
+          "ok",
+          "ok"
+        ],
+        [
+          "ok",
+          "ok"
+        ]
+      ],
+      "distinct_frames": [
+        11,
+        12,
+        22
+      ],
+      "rear_frames": 12,
+      "rear_tour": "screen-transitions-rear",
+      "exit": "finished"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "busybar-signal-sprint",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Signal Sprint",
   "author": "ncoooooper",
   "type": "module",

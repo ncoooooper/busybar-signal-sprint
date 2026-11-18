@@ -2,7 +2,7 @@
   "format_version": 1,
   "id": "io.ncoooooper.signalsprint",
   "name": "Signal Sprint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "api_version": "27.12.0",
   "description": "Measure button reaction time on green and hold your nerve on orange.",
   "author": "ncoooooper"

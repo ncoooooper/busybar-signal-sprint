@@ -2,6 +2,20 @@
 
 Test a single button press against a visual cue. Green starts the response clock. Orange calls for restraint. The timer starts when the firmware acknowledges drawing the green frame and stops on the wheel’s press edge.
 
+## Screen transitions
+
+Wait through black. The green cue starts the reaction clock immediately. Pressing on orange brings up the miss.
+
+![Signal Sprint front display. Wait through black. The green cue starts the reaction clock immediately. Pressing on orange brings up the miss.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Signal Sprint rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
 ## Setup
 
 No settings or companion are required. Rest a finger on the wheel. Use an ordinary press. Timing in the emulator includes host input and rendering delays.
@@ -26,6 +40,6 @@ Install BUSY Bar Emulator and open it. From this repository run the following co
 ~/.busy-emulator/bin/busy-emulator dev --once
 ```
 
-The recordings show device controls on emulator firmware. Each display pixel is enlarged to a 9 × 9 square.
+The recordings show device controls on emulator firmware. Each LED occupies a 16 × 16 cell with a black border.
 
 [Rear display](screenshots/back-1.png) · [MIT license](LICENSE)
