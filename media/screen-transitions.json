@@ -1,6 +1,17 @@
 {
   "app": "busybar-signal-sprint",
-  "sha256": "9da0252c953cb3e00b082c92c709aa3ad1849fbb9b340901ad4a9ff31aafc45e",
+  "sha256": "6a91bc15ec63684291b15985eb42a9d9ea23935cae3f79dd86c5c5de4c59f1dd",
+  "rapid_input_test": {
+    "app": "io.ncoooooper.signalsprint",
+    "sha256": "6a91bc15ec63684291b15985eb42a9d9ea23935cae3f79dd86c5c5de4c59f1dd",
+    "firmware": {
+      "name": "1.3.1",
+      "commit": "8edd2da4"
+    },
+    "heap_peak_kib": 86.9,
+    "budget_kib": 128.0,
+    "exit": "finished"
+  },
   "firmware": "1.3.1",
   "cell": 16,
   "lit": 14,
@@ -39,5 +50,9 @@
       "rear_tour": "screen-transitions-rear",
       "exit": "finished"
     }
-  ]
+  ],
+  "false_start": {
+    "clip": "media/guide/false-start.gif",
+    "input": "Press the wheel twice before a colored signal appears"
+  }
 }

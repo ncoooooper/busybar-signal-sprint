@@ -32,6 +32,12 @@ Pressing on black gives Too early. Pressing on orange gives Wrong color. After t
 
 ![A new attempt shows the signal and the result of the press.](media/guide/use-2.gif)
 
+## False start
+
+Press again while the front is still black. The round ends with **TOO EARLY**. Press the wheel to start a new round.
+
+![The front goes black and an early press brings up TOO EARLY and Try again](media/guide/false-start.gif)
+
 ## Run in the emulator
 
 Install BUSY Bar Emulator and open it. From this repository run the following command, then press **Back** when you finish.
